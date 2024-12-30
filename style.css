@@ -1,0 +1,279 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+      
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+         
+        }
+     
+/* Header */
+header {
+   background-color: #032B44; /* Dark background for header */
+   color: white;
+   padding: 20px 0;
+   text-align: center;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header nav {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 0 20px;
+}
+
+header .logo {
+   font-size: 3em;
+   font-family:"Montserrat", serif;
+   font-style: italic;
+   font-weight: bold;
+   margin-right: 7em;
+   color: #ffffff; /* Light blue color for logo */
+}
+
+header nav ul {
+   list-style: none;
+   display: flex;
+   gap: 90px;
+}
+
+header nav ul li {
+   display: inline;
+}
+
+
+header nav ul li a {
+   color: white;
+   text-decoration: none;
+   font-weight: bold;
+   transition: color 0.3s ease;
+   padding:6px;
+   border-bottom:1px solid white;
+}
+
+.hamburger {
+   font-size: 30px;
+   color: white;
+   cursor: pointer;
+}
+
+/* Sidebar styles */
+.sidebar {
+   height: 100%;
+   width: 250px; /* Width of the sidebar */
+   position: fixed; /* Stay in place */
+   left: -250px; /* Hide it off-screen initially */
+   top: 0; /* Align to the top */
+   background-color:#032B44; /* Sidebar background color */
+   overflow-x: hidden; /* Disable horizontal scroll */
+   transition: left 0.3s; /* Smooth transition for opening/closing */
+}
+
+/* Close button styles */
+.close-btn {
+   font-size: 30px; /* Size of the close icon */
+   color: white; /* Color of the close icon */
+   cursor: pointer; /* Pointer cursor on hover */
+   top: 10px; /* Distance from the top */
+    right: 10px;
+    position: absolute; 
+}
+
+/* Sidebar links */
+.sidebar a {
+
+   padding: 16px 20px; /* Padding for links */
+   text-decoration: none; /* No underline */
+   font-size: 25px; /* Font size */
+   color: #fffefe; /* Link color */
+   display: block; /* Block display for links */
+   border-bottom: 1px solid #014773;
+}
+
+.sidebar a:hover {
+   color: #46caeb; /* Change color on hover */
+}
+
+/* Toggle functionality using checkbox */
+.sidebar-toggle {
+   display: none; /* Hide the checkbox */
+}
+
+/* Show sidebar when checked */
+.sidebar-toggle:checked + .sidebar {
+   left: 0; /* Show sidebar when checked */
+}
+
+/* Overlay styles (optional) */
+.overlay {
+  display:none; 
+}
+
+
+
+
+header nav ul li a:hover {
+   color: #43a5c0; /* Light blue on hover */
+}
+        
+        .main-content {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         padding: 50px 0;
+         background-color: #f2e5d2;
+         box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+     }
+   
+     .intro-section {
+         width: 50%;
+         padding: 20px;
+         /* background-color: #032B44;  */
+         color: #fff;
+         /* border-radius: 0 10px 10px 0; */
+         margin-left: 3em;
+     }
+     .menu-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 50px;
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      box-sizing: border-box;
+      }
+      
+         .menu-icon {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            font-size: 24px;
+            cursor: pointer;
+         }
+         
+         .side-menu {
+            position: fixed;
+            top: 0;
+            left: -250px;
+            width: 250px;
+            height: 100%;
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            box-sizing: border-box;
+            transition: left 0.5s;
+         }
+         
+         .side-menu.open {
+            left: 0;
+         }
+         
+         .side-menu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+         }
+         
+         .side-menu li {
+            margin-bottom: 10px;
+         }
+         
+         .side-menu a {
+            color: #fff;
+            text-decoration: none;
+         }
+         
+         .side-menu a:hover {
+            background-color: #555;
+         }
+     .intro-section h2 {
+         color:black;
+     }
+     .intro-section p {
+         color:black;
+     }
+        .pic img{  
+          border-radius: 50%;
+          margin-right: 9em;
+   width: 50vh;
+   height:60vh;
+   border: 3px solid #032B44;
+   box-shadow: 0 0 55px rgba(255, 171, 171, 0.3);
+        }
+        ul{
+         display: flex;
+         flex: row;
+         list-style: none;
+         font-size: larger;
+         font-weight: bold;
+      justify-content: space-evenly;
+     
+        }
+       .skills ul li{
+         border: 1px solid #032B44;
+         border-radius: 10%;
+         padding: 50px;
+         background-color: #032B44;
+         color: #fff;
+        }
+        .about, .skills, .projects, .contact {
+            padding: 50px 0;
+
+        }
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .project-card1 {
+         color: #fff;
+            background-color:#032B44;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(232, 231, 231, 0.1);
+        }
+        .project-card2 {
+         color: #fff;
+         background-color:#032B44;
+         padding: 20px;
+         border-radius: 5px;
+         box-shadow: 0 2px 5px rgba(189, 188, 188, 0.1);
+     }
+     .project-card3 {
+      color: #fff;
+      background-color: #032B44;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(175, 175, 175, 0.1);
+  }
+        footer {
+            background-color:#032B44;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;}
+            .project-card1 a .btn1:hover{
+               color: #f2e5d2;
+            }
+            footer .container a {
+               color: white;
+               /* margin: 0 10px; */
+               font-size: 1.5em;
+               transition: color 0.3s;
+            }
+            
+            footer .container a:hover {
+               color: #61dafb; /* Light blue on hover */
+            }
+         
+ 

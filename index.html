@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+   <header>
+      <nav>
+        <label for="sidebar-toggle" class="hamburger">&#9776;</label>
+  
+
+    <input type="checkbox" id="sidebar-toggle" class="sidebar-toggle" />
+    
+    <div class="sidebar">
+        <span class="close-btn" onclick="document.getElementById('sidebar-toggle').checked = false;">&times;</span>
+        <a href="#home" style="margin-top: 3em;"> <i class="fa-solid fa-house " style="color: #ffffff;"></i>    Home</a>
+        <a href="#services"><i class="fa-solid fa-computer" style="color: #ffffff;"></i>  Services</a>
+        <a href="#contact"><i class="fa-solid fa-address-book" style="color: #ffffff;"></i>    Contact</a>
+        <a href="#clients"><i class="fa-solid fa-list-check" style="color: #ffffff;"></i>     projects</a>
+    </div>
+          <div class="logo">Fatima</div>
+          <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+          </ul>
+      </nav>
+  </header>
+  <div class="main-content">
+ 
+   <div class="intro-section">
+       <h2>"Hello! I'm Fatima Rasheed"</h2>
+       <p>A <strong style="color: #032B44; font-size: large;" >Fronted developer</strong> passionate about creating amazing websites.</p>
+       <p>With a keep eye for detail and a love for problem-solving, I bring ideas to life through code. Whether it's building responsive websites,intuitive interfaces, or optimizing performance, I'm dedicated to delivering high-quality solutions that exceed expectations. </p>
+       <p>Let's explore my portfolio and discover how I can help bring your vision to life!</p>
+       <button style="background-color: #032B44; border: none; height: 6vh; width:10vw; color: #ffffff;border-radius:20px;">Explore!</button>
+   </div>
+   <div class="pic">
+      <img src="bg2.jpg" alt="Your Image">
+  </div>
+</div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 style="color: #032b44;">Skills :</h2>
+            <ul>
+                <li>HTML<i class="fa-brands fa-html5 fa-2xl" style="color: #ff8800;"></i></li>
+                <li>CSS<i class="fa-brands fa-css3-alt fa-2xl" style="color: #005eff;"></i></li>
+                <li>JavaScript    <i class="fa-brands fa-js fa-2xl" style="color: #f5e000;"></i></li>
+                <li>Bootstrap<i class="fa-brands fa-bootstrap fa-2xl" style="color: #005cfa;"></i></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Projects :</h2>
+            <div class="project-grid">
+                <div class="project-card1">
+                    <h2>Project 1</h2>
+                    <p>I design  login,SignUp,and Forget page of instagram by using  HTML and CSS</p>
+                    <a href=" https://fatimarasheedengineer.github.io/instagram/"><button style="background-color: #ffffff; border: none; height: 6vh; width:10vw; color: #01233f;border-radius:20px;"><i class="fa-regular fa-hand-point-right" style="color: #030231;"></i>  Go  and check</button></a>
+                </div>
+                <div class="project-card2">
+                    <h2>Project 2</h2>
+                    <p> I designed Metro shoes website  Home page by using Html,Css and Bootstrap</p>
+                    <a href=" https://fatimarasheedengineer.github.io/Metro-Shoes/"><button style="background-color: #ffffff; border: none; height: 6vh; width:10vw; color: #01233f;border-radius:20px;"><i class="fa-regular fa-hand-point-right" style="color: #030231;"></i>  Go  and check</button></a>
+                </div>
+                <div class="project-card3">
+                    <h2>Project 3</h2>
+                    <p>I designed K-Hub website  Home page by using Html,Css and Bootstrap and this project represent my full on efforts</p>
+                    <a href="  https://fatimarasheedengineer.github.io/K-HUB/"><button class="btn1"style="background-color: #ffffff; border: none; height: 6vh; width:10vw; color: #01233f;border-radius:20px;"><i class="fa-regular fa-hand-point-right" style="color: #030231;"></i>  Go  and check</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 style="color: #030231;">Contact Me  <i class="fa-solid fa-user"></i> :</h2>
+            <p>You can reach me at <strong>:</strong> <strong>fatimarasheed@gmail.com</strong></p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <a href="https://www.linkedin.com/in/fatima-rasheed" class="fab fa-linkedin"></a>
+            <a href="https://github.com/fatima-rasheed" class="fab fa-github"></a>
+            <a href="https://twitter.com/fatima-rasheed" class="fab fa-twitter"></a>
+            <a href="mailto:fatima@example.com" class="fas fa-envelope"></a>
+            <p>&copy; 2024 Your Fatima Rasheed. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
